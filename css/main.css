@@ -96,7 +96,7 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1em;
   text-align: left;
-  color: black;
+  color: #39393a;
   background-color: white;
 }
 
@@ -111,7 +111,7 @@ img {
 }
 
 a {
-  color: black;
+  color: #39393a;
   text-decoration: none;
 }
 
@@ -155,7 +155,6 @@ li {
   font-weight: bold;
 }
 
-
 figure {
   margin: 0;
 }
@@ -171,7 +170,7 @@ figure {
 }
 
 #contact hr {
-  border-top: 1px solid black;
+  border-top: 1px solid #252f76;
 }
 
 /* STRUCTURAL STYLES */
@@ -204,10 +203,8 @@ footer {
   justify-content: flex-end;
 }
 
-
-
 #work p,
-#about p, 
+#about p,
 footer .contact-wrapper {
   width: 100%;
   text-align: left;
@@ -237,7 +234,7 @@ nav {
 }
 
 .hero-title {
-  padding-top: 300px;
+  padding-top: 200px;
 }
 
 #work {
@@ -306,45 +303,41 @@ figure {
 
 header {
   background-color: #f5e3f7;
-  padding: 30px 0;
-  min-height: 650px;
+  padding: 30px 0 80px;
+  min-height: 450px;
 }
-
 
 nav ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  z-index: 3;
 }
 
 nav ul li {
-  font-size: .875rem;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 
 nav ul li a {
-  color: #6db1bf;
+  color: #252f76;
 }
 
 nav #contact-link {
-  border: 1px solid #6db1bf;
+  border: 1px solid #252f76;
   padding: 10px 20px;
   border-radius: 30px;
 }
 
 nav #contact-link:hover {
-  background-color: #6db1bf;
+  background-color: tomato;
   color: white;
-  border: 1px solid #6db1bf;
-}
-
-.hero-title {
-  align-content: flex-end;
+  border: 1px solid tomato;
 }
 
 .hero-title h1 {
-  color: #f66151;
-  line-height: 1.75; 
+  color: #252f76;
+  line-height: 1.75;
 }
 
 .hero-title h1 span {
@@ -353,10 +346,8 @@ nav #contact-link:hover {
 
 .hero-title h3 {
   font-family: "Yeseva One", serif;
-  color: #f66151;
+  color: #252f76;
 }
-
-
 
 /*----------MOBILE STYLES HOME PAGE--------------*/
 
@@ -387,8 +378,7 @@ nav #contact-link:hover {
   align-items: center;
 }
 
-
-#work figure  {
+#work figure {
   filter: drop-shadow(1px 2px 6px lightgrey);
   margin: 20px 0;
 }
@@ -407,15 +397,15 @@ nav #contact-link:hover {
 }
 
 .project-link {
-  padding: .75rem 3.75rem;
-  border: 1px solid black;
+  padding: 0.75rem 3.75rem;
+  border: 1px solid #39393a;
   border-radius: 30px;
 }
 
 .project-link:hover {
-  background-color: #b6d8df;
+  background-color: #ffb1a3;
   color: white;
-  border: 1px solid #b6d8df;
+  border: 1px solid #ffb1a3;
 }
 
 /* SKILLS */
@@ -445,6 +435,7 @@ nav #contact-link:hover {
 footer {
   background-color: #f5e3f7;
   clip-path: ellipse(129% 100% at 45.26% 100%);
+  color: #252f76;
 }
 
 footer .contact-wrapper {
@@ -474,10 +465,10 @@ footer .social-icons li {
   justify-content: left;
   align-items: center;
 }
- 
+
 footer .social-icons li i {
   font-size: 1.875rem;
-  color: black;
+  color: #252f76;
 }
 
 /* ==========================================================================
@@ -570,15 +561,15 @@ footer .social-icons li i {
 
 @media only screen and (min-width: 768px) {
   /* Tablet styles here */
-  
+
   /* General Styles */
-  
+
   .content-wrapper {
     max-width: 640px;
   }
 
   /* FONT STYLES */
-  
+
   h1,
   h2 {
     font-size: 2.5rem;
@@ -620,11 +611,11 @@ footer .social-icons li i {
   #work h2 {
     margin-bottom: 60px;
   }
-  
+
   /* HEADER */
-  
+
   /* PORTFOLIO */
-  
+
   .portfolio-wrapper {
     justify-content: space-around;
   }
@@ -678,7 +669,7 @@ footer .social-icons li i {
     width: 8em;
     justify-content: space-between;
   }
-  
+
   footer .social-icons li i {
     font-size: 2rem;
   }
@@ -702,40 +693,38 @@ footer .social-icons li i {
     margin-top: 20px;
     text-align: right;
   }
-  
 }
 
 @media only screen and (min-width: 1200px) {
-  
   /* Desktop styles */
 
   .content-wrapper {
     max-width: 1450px;
   }
-  
+
   /* Font styles */
 
   h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .hero-title h1 span {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
-  
+
   h3 {
-    font-size: 2.25rem;
+    font-size: 2.75rem;
   }
 
   .about-info h2 {
     font-size: 3rem;
     text-align: left;
   }
-  
+
   #about h3 {
     font-size: 2rem;
   }
@@ -744,12 +733,11 @@ footer .social-icons li i {
     font-size: 3rem;
   }
 
-
-/* Element Margins */
+  /* Element Margins */
 
   header {
     padding-top: 80px;
-    padding-bottom: 100px;
+    padding-bottom: 140px;
   }
 
   #skills {
@@ -761,7 +749,7 @@ footer .social-icons li i {
   }
 
   .about-info h2 {
-    margin: 0;
+    padding: 20px 0 0 0;
   }
 
   .about-info h3 {
@@ -785,13 +773,12 @@ footer .social-icons li i {
     width: 45%;
   }
 
-
   nav ul li a {
     padding: 10px 20px;
   }
-  
+
   nav ul li a:hover {
-    background-color: #b1cadb;
+    background-color: #fb968d;
     color: white;
     padding: 10px 20px;
     border-radius: 30px;
@@ -802,7 +789,7 @@ footer .social-icons li i {
   }
 
   .hero-title h1 {
-    max-width: 60%;
+    max-width: 70%;
   }
 
   /* PORTFOLIO */
