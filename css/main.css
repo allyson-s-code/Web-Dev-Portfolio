@@ -89,7 +89,7 @@ textarea {
 /* General Styles */
 
 html {
-  font-size: 16 px;
+  font-size: 16px;
 }
 
 body {
@@ -140,7 +140,7 @@ h4 {
 
 h3,
 h4 {
-  font-family: "IBM plex sans", sans serif;
+  font-family: "IBM plex sans", sans-serif;
   line-height: 1.5;
   width: 100%;
 }
@@ -588,7 +588,7 @@ footer .social-icons li i {
   }
 
   h4 {
-    font-size: 1.25;
+    font-size: 1.25rem;
   }
 
   /* element margins */
