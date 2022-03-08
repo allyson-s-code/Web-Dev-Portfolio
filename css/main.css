@@ -116,17 +116,18 @@ a {
 }
 
 h1,
-h2 {
+h3 {
   font-family: "Yeseva One", serif;
-  font-size: 1.75rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
-h3 {
+h2 {
+  font-family: "Yeseva One", serif;
   font-size: 1.5rem;
 }
 
-h4 {
+h5 {
   font-size: 1.125rem;
 }
 
@@ -134,12 +135,11 @@ h4 {
   text-transform: uppercase;
 }
 
-.about-info h3 {
+.about-info h4 {
   font-weight: 400;
 }
 
-h3,
-h4 {
+h5 {
   font-family: "IBM plex sans", sans-serif;
   line-height: 1.5;
   width: 100%;
@@ -234,7 +234,11 @@ nav {
 }
 
 .hero-title {
-  padding-top: 200px;
+  padding-top: 60px;
+}
+
+.hero-title h2 {
+  padding-top: 30px;
 }
 
 #work {
@@ -247,11 +251,11 @@ footer {
   padding: 80px 0;
 }
 
-h2 {
+h3 {
   margin: 20px 0 20px 0;
 }
 
-h4 {
+h5 {
   margin-bottom: 20px;
 }
 
@@ -271,11 +275,11 @@ figure {
   margin-bottom: 40px;
 }
 
-.about-info h2 {
+.about-info h3 {
   margin: 40px 0 40px 0;
 }
 
-.about-info h3 {
+.about-info h4 {
   margin-bottom: 60px;
 }
 
@@ -283,7 +287,7 @@ figure {
   margin: 0 0 30px 0;
 }
 
-.contact-wrapper h2 {
+.contact-wrapper h3 {
   margin-bottom: 40px;
 }
 
@@ -303,15 +307,13 @@ figure {
 
 header {
   background-color: #f5e3f7;
-  padding: 30px 0 80px;
-  min-height: 450px;
+  padding: 30px 0 100px 0;
 }
 
 nav ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  z-index: 3;
 }
 
 nav ul li {
@@ -340,11 +342,7 @@ nav #contact-link:hover {
   line-height: 1.75;
 }
 
-.hero-title h1 span {
-  font-size: 2.25rem;
-}
-
-.hero-title h3 {
+.hero-title h2 {
   font-family: "Yeseva One", serif;
   color: #252f76;
 }
@@ -359,7 +357,7 @@ nav #contact-link:hover {
   width: 100%;
 }
 
-#work h2 {
+#work h3 {
   width: 100%;
 }
 
@@ -383,7 +381,7 @@ nav #contact-link:hover {
   margin: 20px 0;
 }
 
-#work h4 {
+#work h5 {
   margin-bottom: 20px;
 }
 
@@ -575,23 +573,19 @@ footer .social-icons li i {
   /* FONT STYLES */
 
   h1,
-  h2 {
+  h3 {
     font-size: 2.5rem;
   }
 
-  h3 {
+  h2 {
     font-size: 1.5rem;
-  }
-
-  .hero-title h1 span {
-    font-size: 3rem;
   }
 
   header nav ul li {
     font-size: 1rem;
   }
 
-  h4 {
+  h5 {
     font-size: 1.25rem;
   }
 
@@ -599,7 +593,6 @@ footer .social-icons li i {
 
   header {
     padding-top: 60px;
-    padding-bottom: 80px;
   }
 
   #work,
@@ -612,7 +605,7 @@ footer .social-icons li i {
     padding: 140px 0;
   }
 
-  #work h2 {
+  #work h3 {
     margin-bottom: 60px;
   }
 
@@ -663,7 +656,7 @@ footer .social-icons li i {
     width: 60%;
   }
 
-  .about-info h3 {
+  .about-info h4 {
     text-align: left;
   }
 
@@ -712,28 +705,24 @@ footer .social-icons li i {
     font-size: 3.5rem;
   }
 
-  h2 {
+  h3 {
     font-size: 3rem;
   }
 
-  .hero-title h1 span {
-    font-size: 4rem;
-  }
-
-  h3 {
+  h2 {
     font-size: 2.75rem;
   }
 
-  .about-info h2 {
+  .about-info h3 {
     font-size: 3rem;
     text-align: left;
   }
 
-  #about h3 {
+  #about h4 {
     font-size: 2rem;
   }
 
-  footer h2 {
+  footer h3 {
     font-size: 3rem;
   }
 
@@ -752,11 +741,11 @@ footer .social-icons li i {
     max-width: 900px;
   }
 
-  .about-info h2 {
+  .about-info h3 {
     padding: 20px 0 0 0;
   }
 
-  .about-info h3 {
+  .about-info h4 {
     margin: 40px 0;
   }
 
@@ -790,10 +779,6 @@ footer .social-icons li i {
 
   .hero-title {
     max-width: 95%;
-  }
-
-  .hero-title h1 {
-    max-width: 70%;
   }
 
   /* PORTFOLIO */
