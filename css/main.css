@@ -136,6 +136,7 @@ h5 {
 }
 
 .about-info h4 {
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -583,6 +584,10 @@ footer .social-icons li i {
 
   header nav ul li {
     font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 2rem;
   }
 
   h5 {
