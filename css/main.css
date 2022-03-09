@@ -160,7 +160,8 @@ figure {
   margin: 0;
 }
 
-.skills-wrapper p {
+.skills-wrapper p,
+.tools-wrapper p {
   font-size: 1.125rem;
   text-transform: uppercase;
 }
@@ -274,6 +275,10 @@ figure {
 
 .skills-header {
   margin-bottom: 40px;
+}
+
+.tools-header {
+  margin: 60px 0 40px 0;
 }
 
 .about-info h3 {
@@ -413,7 +418,8 @@ nav #contact-link:hover {
   background-color: #fdf7f7;
 }
 
-.skills-wrapper p {
+.skills-wrapper p,
+.tools-wrapper p {
   background-color: #fce8e6;
   padding: 15px 0;
   margin: 20px 0;
@@ -594,6 +600,11 @@ footer .social-icons li i {
     font-size: 1.25rem;
   }
 
+  .skills-wrapper p,
+  .tools-wrapper p {
+    font-size: 1rem;
+  }
+
   /* element margins */
 
   header {
@@ -633,7 +644,8 @@ footer .social-icons li i {
 
   /* SKILLS */
 
-  .skills-wrapper {
+  .skills-wrapper,
+  .tools-wrapper {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -641,11 +653,13 @@ footer .social-icons li i {
     text-transform: uppercase;
   }
 
-  .skill {
+  .skill,
+  .tool {
     width: 45%;
   }
 
-  .skill-wrapper p {
+  .skill-wrapper p,
+  .tool-wrapper p {
     padding: 15px 0;
   }
 
@@ -794,7 +808,8 @@ footer .social-icons li i {
 
   /* SKILLS */
 
-  .skill {
+  .skill,
+  .tool {
     width: 30%;
   }
 
