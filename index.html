@@ -11,6 +11,7 @@
     <meta property="og:type" content="" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
+    <meta name="theme-color" content="#fafafa" />
 
     <link rel="manifest" href="site.webmanifest" />
     <link rel="apple-touch-icon" href="icon.png" />
@@ -22,14 +23,32 @@
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
 
-    <meta name="theme-color" content="#fafafa" />
+    <script src="js/script.js" defer></script>
   </head>
 
   <body>
@@ -37,197 +56,274 @@
 
     <header>
       <div class="content-wrapper">
-        <nav>
-          <ul>
-            <li><a href="#work">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact" id="contact-link">Contact</a></li>
+        <nav id="main-nav" aria-label="primary">
+          <ul class="nav-bar">
+            <li class="nav-item"><a href="#work">Projects</a></li>
+            <li class="nav-item"><a href="#skills">Skills</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item">
+              <a href="#contact" id="contact-link">Contact</a>
+            </li>
           </ul>
         </nav>
-        <div class="hero-title">
-          <h1>Hello! I’m Allyson Smith.</h1>
-          <h2>
-            I'm a front-end developer who makes cool things for the web :)
+
+        <div class="mobile-menu-wrapper">
+          <button
+            aria-label="menu"
+            aria-expanded="false"
+            aria-controls="#nav"
+            class="hamburger-menu"
+            id="hamburger-menu"
+          >
+            <svg
+              width="24"
+              height="18"
+              xmlns="http://www.w3.org/2000/svg"
+              class="hamburger-menu"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
+                fill="#3b15e4"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <nav id="mobile-nav" class="overlay" aria-label="menu">
+          <!-- Button to close overlay nav -->
+          <button
+            type="button"
+            aria-label="menu-close"
+            aria-controls="#nav"
+            class="close-menu"
+            onclick="closeNav()"
+          >
+            &times;
+          </button>
+          <ul class="nav-bar">
+            <li class="nav-item" onclick="closeNav()">
+              <a href="#work">Projects</a>
+            </li>
+            <li class="nav-item" onclick="closeNav()">
+              <a href="#skills">Skills</a>
+            </li>
+            <li class="nav-item" onclick="closeNav()">
+              <a href="#about">About</a>
+            </li>
+            <li class="nav-item" onclick="closeNav()">
+              <a href="#contact" id="contact-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div id="hero" class="hero-title animate">
+          <h1 class="animate fadeInLeft delay-500">
+            <span class="hero-span animate fadeInLeft delay-400"
+              >Hello! My name is</span
+            ><br />Allyson Smith<span
+              class="period animate fadeInLeft bounce delay-800"
+              >.</span
+            >
+          </h1>
+          <h2 class="animate fadeInLeft delay-600">
+            I'm a front-end developer who makes cool things for the web
+            <span class="smiley animate turnOver delay-plus"> &nbsp :)</span>
           </h2>
         </div>
       </div>
     </header>
 
     <main>
+      <section id="about">
+        <div class="content-wrapper about-wrapper">
+          <figure class="profile-img-wrapper">
+            <img
+              src="img/allyson-profile-2.png"
+              alt="Allyson Smith Headshot"
+              class="profile-img"
+            />
+          </figure>
+          <div class="about-info">
+            <h3>About Me<span class="period">.</span></h3>
+            <h4>
+              Hi! I'm Allyson and I am a front-end developer and maker based in
+              Brooklyn, NY.
+            </h4>
+            <p class="about-text">
+              I come to coding with a background in fine art and home product
+              design. I have always been interested in drawing, painting, and
+              the physical side of making. It wasn’t until recently that I
+              discovered the satisfaction of building things for the web. I love
+              figuring out how to code responsive websites and user interfaces.
+              Most of all I love learning new things every day and putting
+              things out into the world that help make the web a little
+              brighter. <br />
+              When I’m not coding I’m painting, exploring nature, baking
+              deliciousness, or learning ALL about Minecraft from my 6-year-old.
+            </p>
+            <p>I can’t wait to work with you!</p>
+
+            <h5 id="skills" class="skills-header">Skills &amp Tools</h5>
+            <ul class="skills-wrapper">
+              <li class="skill">HTML5</li>
+              <li class="skill">CSS3</li>
+              <li class="skill">JavaScript</li>
+              <li class="skill">React</li>
+              <li class="skill">API's</li>
+              <li class="skill">Flexbox &amp Grid</li>
+              <li class="skill">WordPress</li>
+              <li class="skill">Git &amp; GitHub</li>
+              <li class="skill">Responsive Web Development</li>
+              <li class="skill">Chrome DevTools</li>
+              <li class="skill">Adobe Creative Suite</li>
+              <li class="skill">Visual Studio Code</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section id="work">
         <div class="content-wrapper">
-          <h3>Projects</h3>
+          <h3>Projects<span class="period">.</span></h3>
           <div class="portfolio-wrapper">
-            <div class="portfolio-item">
-              <figure>
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-item">
+                <figure>
+                  <a
+                    href="https://allyson-s-code.github.io/expense-chart-component/"
+                    target="_blank"
+                    ><img
+                      src="img/expense-chart.png"
+                      alt="Expense Chart Project"
+                  /></a>
+                </figure>
+                <h5>Expense Chart Component</h5>
+                <p class="project-description">
+                  A responsive bar chart component built using HTML, CSS,
+                  Flexbox, JavaScript, and Chart.js.
+                </p>
+                <p class="skills"><span>Skills: </span>HTML, CSS, JavaScript</p>
+                <p class="skills"><span>Tools: </span>Chart.js</p>
                 <a
+                  class="project-link"
                   href="https://allyson-s-code.github.io/expense-chart-component/"
                   target="_blank"
-                  ><img src="img/expense-chart.png" alt="Expense Chart Project"
-                /></a>
-              </figure>
-              <h5>Expense Chart Component</h5>
-              <p class="project-description">
-                A responsive bar chart component built using HTML, CSS, Flexbox,
-                JavaScript, and Chart.js.
-              </p>
-              <p><span>Skills: </span>HTML, CSS, JavaScript</p>
-              <p><span>Tools: </span>Chart.js</p>
-              <a
-                class="project-link"
-                href="https://allyson-s-code.github.io/expense-chart-component/"
-                target="_blank"
-                >live page</a
-              >
+                  >live page</a
+                >
+              </div>
             </div>
 
-            <div class="portfolio-item">
-              <figure>
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-item">
+                <figure>
+                  <a
+                    href="https://allyson-s-code.github.io/Tip-Calculator/"
+                    target="_blank"
+                    ><img src="img/calculator.png" alt="Tip Calculator Project"
+                  /></a>
+                </figure>
+                <h5>Tip Calculator</h5>
+                <p class="project-description">
+                  A mobile-first responsive tip calculator app built with HTML,
+                  CSS, and JavaScript.
+                </p>
+                <p class="skills"><span>Skills: </span>HTML, CSS, JavaScript</p>
+                <p class="skills">
+                  <span>Tools: </span>Chrome DevTools, Visual Studio Code
+                </p>
                 <a
+                  class="project-link"
                   href="https://allyson-s-code.github.io/Tip-Calculator/"
                   target="_blank"
-                  ><img src="img/calculator.png" alt="Tip Calculator Project"
-                /></a>
-              </figure>
-              <h5>Tip Calculator</h5>
-              <p class="project-description">
-                A mobile-first responsive tip calculator app built with HTML,
-                CSS, and JavaScript.
-              </p>
-              <p><span>Skills: </span>HTML, CSS, JavaScript</p>
-              <p><span>Tools: </span>Chrome DevTools, Visual Studio Code</p>
-              <a
-                class="project-link"
-                href="https://allyson-s-code.github.io/Tip-Calculator/"
-                target="_blank"
-                >live page</a
-              >
+                  >live page</a
+                >
+              </div>
             </div>
 
-            <div class="portfolio-item">
-              <figure>
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-item">
+                <figure>
+                  <a
+                    href="https://allyson-s-code.github.io/Sunnyside-Landing_Page/"
+                    target="_blank"
+                    ><img src="img/sunnyside.png" alt="Sunnyside Landing Page"
+                  /></a>
+                </figure>
+                <h5>Sunnyside Landing Page</h5>
+                <p class="project-description">
+                  A landing page for a marketing agency using Flexbox to ensure
+                  the site looks great on a variety of screen sizes and
+                  JavaScript for a mobile dropdown menu.
+                </p>
+                <p class="skills">
+                  <span>Skills: </span>HTML, CSS, Flexbox, JavaScript
+                </p>
+                <p class="skills">
+                  <span>Tools: </span>GitHub, Photoshop, Chrome DevTools
+                </p>
                 <a
+                  class="project-link"
                   href="https://allyson-s-code.github.io/Sunnyside-Landing_Page/"
                   target="_blank"
-                  ><img src="img/sunnyside.png" alt="Sunnyside Landing Page"
-                /></a>
-              </figure>
-              <h5>Sunnyside Landing Page</h5>
-              <p class="project-description">
-                A landing page for a marketing agency using Flexbox to ensure
-                the site looks great on a variety of screen sizes and JavaScript
-                for a mobile dropdown menu.
-              </p>
-              <p><span>Skills: </span>HTML, CSS, Flexbox, JavaScript</p>
-              <p><span>Tools: </span>GitHub, Photoshop, Chrome DevTools</p>
-              <a
-                class="project-link"
-                href="https://allyson-s-code.github.io/Sunnyside-Landing_Page/"
-                target="_blank"
-                >live page</a
-              >
+                  >live page</a
+                >
+              </div>
             </div>
 
-            <div class="portfolio-item">
-              <figure>
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-item">
+                <figure>
+                  <a
+                    href="https://allyson-s-code.github.io/Guess-The-Word/"
+                    target="_blank"
+                    ><img src="img/guess-word.png" alt="Guess The Word Project"
+                  /></a>
+                </figure>
+                <h5>Guess The Word Game</h5>
+                <p class="project-description">
+                  A fun guessing game where players can guess a random word one
+                  letter at a time. If a player guesses all the letters
+                  correctly before they use up their allotted guesses, they win!
+                </p>
+                <p class="skills"><span>Skills: </span>JavaScript</p>
+                <p class="skills"><span>Tools: </span>GitHub Pages, JSON</p>
                 <a
+                  class="project-link"
                   href="https://allyson-s-code.github.io/Guess-The-Word/"
                   target="_blank"
-                  ><img src="img/guess-word.png" alt="Guess The Word Project"
-                /></a>
-              </figure>
-              <h5>Guess The Word Game</h5>
-              <p class="project-description">
-                A fun guessing game where players can guess a random word one
-                letter at a time. If a player guesses all the letters correctly
-                before they use up their allotted guesses, they win!
-              </p>
-              <p><span>Skills: </span>JavaScript</p>
-              <p><span>Tools: </span>GitHub Pages, JSON</p>
-              <a
-                class="project-link"
-                href="https://allyson-s-code.github.io/Guess-The-Word/"
-                target="_blank"
-                >live page</a
-              >
+                  >live page</a
+                >
+              </div>
             </div>
 
-            <div class="portfolio-item">
-              <figure>
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-item">
+                <figure>
+                  <a
+                    href="https://allyson-s-code.github.io/Unplugged-Responsive/"
+                    target="_blank"
+                    ><img src="img/unplugged.png" alt="Unplugged Project"
+                  /></a>
+                </figure>
+                <h5>Unplugged</h5>
+                <p class="project-description">
+                  A multi-page responsive website coded with Flexbox that adapts
+                  to mobile, tablet, and desktop screens.
+                </p>
+                <p class="skills"><span>Skills: </span>HTML, CSS, Flexbox</p>
+                <p class="skills">
+                  <span>Tools: </span>GitHub, Photoshop, Visual Studio Code
+                </p>
                 <a
+                  class="project-link"
                   href="https://allyson-s-code.github.io/Unplugged-Responsive/"
                   target="_blank"
-                  ><img src="img/unplugged.png" alt="Unplugged Project"
-                /></a>
-              </figure>
-              <h5>Unplugged</h5>
-              <p class="project-description">
-                A multi-page responsive website coded with Flexbox that adapts
-                to mobile, tablet, and desktop screens.
-              </p>
-              <p><span>Skills: </span>HTML, CSS, Flexbox</p>
-              <p><span>Tools: </span>GitHub, Photoshop, Visual Studio Code</p>
-              <a
-                class="project-link"
-                href="https://allyson-s-code.github.io/Unplugged-Responsive/"
-                target="_blank"
-                >live page</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills">
-        <div class="content-wrapper">
-          <h3 class="skills-header">Skills</h3>
-          <div class="skills-wrapper">
-            <p class="skill">HTML5</p>
-            <p class="skill">CSS3</p>
-            <p class="skill">Responsive Web Development</p>
-            <p class="skill">JavaScript</p>
-            <p class="skill">React</p>
-            <p class="skill">Git &amp; GitHub</p>
-          </div>
-          <h3 class="tools-header">Tools</h3>
-          <div class="tools-wrapper">
-            <p class="tool">Chrome DevTools</p>
-            <p class="tool">Adobe Creative Suite</p>
-            <p class="tool">Visual Studio Code</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="about">
-        <div class="content-wrapper">
-          <div class="about-wrapper">
-            <figure>
-              <img
-                src="img/allyson-profile.png"
-                alt="Allyson Smith Headshot"
-                id="profile-image"
-              />
-            </figure>
-            <div class="about-info">
-              <h3>Hi! I'm Allyson Smith.</h3>
-              <h4>
-                I am a front-end developer and maker based in Brooklyn, NY.
-              </h4>
-              <p class="about-text">
-                I come to coding with a background in fine art and home product
-                design. I have always been interested in drawing, painting, and
-                the physical side of making. It wasn’t until recently that I
-                discovered the satisfaction of building things for the web. I
-                love figuring out how to code responsive websites and user
-                interfaces. Most of all I love learning new things every day and
-                putting things out into the world that help make the web a
-                little brighter. <br />
-                When I’m not coding I’m painting, exploring nature, baking
-                deliciousness, or learning ALL about Minecraft from my
-                6-year-old.
-              </p>
-              <p><span>I can’t wait to work with you!</span></p>
+                  >live page</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -238,7 +334,11 @@
       <div class="content-wrapper">
         <div class="contact-wrapper">
           <div class="contact-info">
-            <h3>Get in touch</h3>
+            <h3>
+              Get in touch<span class="period animate bounce delay-200">.</span
+              ><span class="period animate bounce delay-300">.</span
+              ><span class="period animate bounce delay-400">.</span>
+            </h3>
             <a href="mailto:allysonsmithstudio@gmail.com" target="_blank"
               >allysonsmithstudio@gmail.com</a
             >
