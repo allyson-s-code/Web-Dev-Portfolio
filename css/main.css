@@ -336,7 +336,6 @@ button {
   flex-direction: column;
   justify-content: center;
   align-content: flex-start;
-  transition: 2s ease-in-out;
   margin: 80px 0;
 }
 
@@ -344,18 +343,21 @@ button {
   color: var(--heading-color);
   line-height: 1.4;
   font-weight: 800;
+  transition: 2s ease-in-out;
 }
 
 .period {
   color: var(--accent-pop-color);
   animation-duration: 5s;
   display: inline-block;
+  transition: 2s ease-in-out;
 }
 
 .hero-title h2 {
   color: var(--heading-color);
   font-weight: 100;
   padding-top: 20px;
+  transition: 2s ease-in-out;
 }
 
 .smiley {
@@ -401,7 +403,7 @@ button {
 }
 
 .animate {
-  animation-duration: 0.85s;
+  animation-duration: 1s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.2, 0.3, 0.25, 0.9);
 }
@@ -436,10 +438,6 @@ button {
 
 .delay-plus {
   animation-delay: 1.25s;
-}
-
-.hero-title:hover {
-  transform: scale(1.025);
 }
 
 /*---------- ABOUT SECTION------------*/
@@ -558,8 +556,8 @@ button {
     45deg,
     var(--accent-pop-color),
     var(--accent-pop-color) 2px,
-    transparent 2px,
-    transparent 4px
+    var(--bg-cream) 2px,
+    var(--bg-cream) 4px
   );
   border-radius: 20px;
   display: block;
