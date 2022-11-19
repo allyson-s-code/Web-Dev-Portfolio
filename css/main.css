@@ -342,7 +342,7 @@ button {
 .hero-title h1 {
   color: var(--heading-color);
   line-height: 1.4;
-  font-weight: 800;
+  font-weight: 900;
   transition: 2s ease-in-out;
 }
 
@@ -603,7 +603,7 @@ button {
 }
 
 .skills span {
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .project-link {
@@ -682,7 +682,7 @@ footer .period {
 
 .contact-info a {
   font-family: "Roboto Mono", monospace;
-  font-weight: bold;
+  font-weight: 400;
   cursor: pointer;
   display: inline-block;
   transition: transform 0.2s ease-in-out;
