@@ -1,19 +1,19 @@
 {
   "short_name": "",
-  "name": "Allyson Smith Portfolio",
+  "name": "Allyson Smith | Front End Developer",
   "icons": [
     {
-      "src": "/img/favicon/favicon-192.png",
+      "src": "/img/favicons/favicon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/img/favicon/favicon-512.png",
+      "src": "/img/favicons/favicon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "/?utm_source=homescreen",
+  "start_url": "https://smithstudio.dev",
   "background_color": "#fafafa",
   "theme_color": "#fafafa"
 }
