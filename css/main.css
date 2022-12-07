@@ -454,7 +454,7 @@ button {
 
 .profile-img-wrapper {
   width: 80%;
-  max-width: 300px;
+  max-width: 275px;
   position: relative;
   z-index: 1;
 }
@@ -646,7 +646,7 @@ footer h3 {
 }
 
 footer .period {
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   display: inline-block;
   padding-left: 4px;
@@ -663,16 +663,12 @@ footer .period {
   10% {
     transform: scale(1.1, 0.9) translateY(0);
   }
-  30% {
+
+  50% {
     transform: scale(0.9, 1.1) translateY(-10px);
   }
-  50% {
-    transform: scale(1.05, 0.95) translateY(0);
-  }
-  57% {
-    transform: scale(1, 1) translateY(-1px);
-  }
-  64% {
+
+  75% {
     transform: scale(1, 1) translateY(0);
   }
   100% {
@@ -943,6 +939,10 @@ footer .social-icons i {
     justify-content: center;
   }
 
+  .portfolio-item {
+    padding: 10px 30px;
+  }
+
   /* BASE FOOTER STYLES */
   footer h3 {
     font-size: 2.25rem;
@@ -1034,6 +1034,10 @@ footer .social-icons i {
 
   .portfolio-item-wrapper {
     width: 48%;
+  }
+
+  .portfolio-item {
+    padding: 10px 20px;
   }
 
   .project-description {
@@ -1137,10 +1141,6 @@ footer .social-icons i {
 
   .portfolio-item-wrapper {
     width: 32%;
-  }
-
-  .portfolio-item {
-    padding: 15px 30px;
   }
 
   /* Footer */

@@ -125,7 +125,13 @@
         <div class="content-wrapper about-wrapper">
           <figure class="profile-img-wrapper">
             <img
-              src="img/allyson-profile-2.png"
+              srcset="
+                img/allyson-profile-275w.png 275w,
+                img/allyson-profile-600w.png 600w
+              "
+              sizes="(max-width: 1199px) 275px,
+              600px"
+              src="img/allyson-profile-600w.png"
               alt="Allyson Smith Headshot"
               class="profile-img"
             />
@@ -177,7 +183,13 @@
               <div class="portfolio-item">
                 <figure>
                   <a href="https://plant-babies.netlify.app/" target="_blank"
-                    ><img src="img/plant-babies.png" alt="Plant Babies Project"
+                    ><img
+                      srcset="
+                        img/plant-babies-360w.png,
+                        img/plant-babies-720w.png 2x
+                      "
+                      src="img/plant-babies-720w.png"
+                      alt="Plant Babies Project"
                   /></a>
                 </figure>
                 <h5>Plant Babies</h5>
