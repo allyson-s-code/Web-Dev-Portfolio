@@ -152,6 +152,15 @@ h3 {
   color: #3b15e4;
 }
 
+h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.portfolio-item h4 {
+  font-size: 1.125rem;
+}
+
 h5 {
   width: 100%;
   font-size: 1.125rem;
@@ -160,11 +169,6 @@ h5 {
 
 .project-link {
   text-transform: uppercase;
-}
-
-h4 {
-  font-size: 1rem;
-  font-weight: 300;
 }
 
 p,
@@ -589,13 +593,13 @@ button {
   margin: 20px 0;
 }
 
-#work h5 {
-  margin-bottom: 20px;
+#work h4 {
+  margin-bottom: 10px;
   align-self: center;
 }
 
 .project-description {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .skills {
@@ -615,7 +619,7 @@ button {
   color: var(--main-text-color);
   text-decoration: none;
   align-self: left;
-  margin: 40px 0 60px 0;
+  margin: 30px 0 45px 0;
 }
 
 .project-link:hover {
@@ -857,8 +861,9 @@ footer .social-icons i {
     font-size: 1.5rem;
   }
 
-  .portfolio-item h5 {
+  .portfolio-item h4 {
     font-size: 1.125rem;
+    font-weight: 400;
   }
 
   /*  margins */
