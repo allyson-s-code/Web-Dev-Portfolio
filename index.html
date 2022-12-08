@@ -124,17 +124,29 @@
       <section id="about">
         <div class="content-wrapper about-wrapper">
           <figure class="profile-img-wrapper">
-            <img
-              srcset="
-                img/allyson-profile-275w.png 275w,
-                img/allyson-profile-600w.png 600w
-              "
-              sizes="(max-width: 1199px) 275px,
-              600px"
-              src="img/allyson-profile-600w.png"
-              alt="Allyson Smith Headshot"
-              class="profile-img"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="img/profile/allyson-profile-275w.webp 1x"
+              />
+              <source
+                type="image/webp"
+                srcset="img/profile/allyson-profile-600w.webp 2x"
+              />
+              <source
+                type="image/jpeg"
+                srcset="img/profile/allyson-profile-275w.jpg 1x"
+              />
+              <source
+                type="image/jpeg"
+                srcset="img/profile/allyson-profile-600w.jpg 2x"
+              />
+              <img
+                src="img/profile/allyson-profile-275w.jpg"
+                alt="Allyson Smith Headshot"
+                class="profile-img"
+              />
+            </picture>
           </figure>
           <div class="about-info">
             <h3 class="about-header">About Me<span class="period">.</span></h3>
@@ -182,15 +194,30 @@
             <div class="portfolio-item-wrapper">
               <div class="portfolio-item">
                 <figure>
-                  <a href="https://plant-babies.netlify.app/" target="_blank"
-                    ><img
-                      srcset="
-                        img/plant-babies-360w.png,
-                        img/plant-babies-720w.png 2x
-                      "
-                      src="img/plant-babies-720w.png"
-                      alt="Plant Babies Project"
-                  /></a>
+                  <a href="https://plant-babies.netlify.app/" target="_blank">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="img/plant-babies/plant-babies-360w.webp 1x"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="img/plant-babies/plant-babies-720w.webp 2x"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="img/plant-babies/plant-babies-360w.jpg 1x"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="img/plant-babies/plant-babies-720w.jpg 2x"
+                      />
+                      <img
+                        src="img/plant-babies/plant-babies-720w.jpg"
+                        alt="Plant Babies Project"
+                      />
+                    </picture>
+                  </a>
                 </figure>
                 <h5>Plant Babies</h5>
                 <p class="project-description">
@@ -217,8 +244,30 @@
                   <a
                     href="https://allyson-s-code.github.io/Tip-Calculator/"
                     target="_blank"
-                    ><img src="img/calculator.png" alt="Tip Calculator Project"
-                  /></a>
+                  >
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="img/calculator/calculator-360w.webp 1x"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="img/calculator/calculator-720w.webp 2x"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="img/calculator/calculator-360w.jpg 1x"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="img/calculator/calculator-720w.jpg 2x"
+                      />
+                      <img
+                        src="img/calculator/calculator-720w.jpg"
+                        alt="Tip Calculator Project"
+                      />
+                    </picture>
+                  </a>
                 </figure>
                 <h5>Tip Calculator</h5>
                 <p class="project-description">
@@ -244,8 +293,30 @@
                   <a
                     href="https://allyson-s-code.github.io/Sunnyside-Landing_Page/"
                     target="_blank"
-                    ><img src="img/sunnyside.png" alt="Sunnyside Landing Page"
-                  /></a>
+                  >
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="img/sunnyside/sunnyside-360w.webp 1x"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="img/sunnyside/sunnyside-720w.webp 2x"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="img/sunnyside/sunnyside-360w.jpg 1x"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="img/sunnyside/sunnyside-720w.jpg 2x"
+                      />
+                      <img
+                        src="img/sunnyside/sunnyside-720w.jpg"
+                        alt="Sunnyside Landing Page"
+                      />
+                    </picture>
+                  </a>
                 </figure>
                 <h5>Sunnyside Landing Page</h5>
                 <p class="project-description">
@@ -274,8 +345,30 @@
                   <a
                     href="https://allyson-s-code.github.io/Guess-The-Word/"
                     target="_blank"
-                    ><img src="img/guess-word.png" alt="Guess The Word Project"
-                  /></a>
+                  >
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="img/word-game/guess-word-360w.webp 1x"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="img/word-game/guess-word-720w.webp 2x"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="img/word-game/guess-word-360w.jpg 1x"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="img/word-game/guess-word-720w.jpg 2x"
+                      />
+                      <img
+                        src="img/word-game/guess-word-720w.jpg"
+                        alt="Guess the Word Project"
+                      />
+                    </picture>
+                  </a>
                 </figure>
                 <h5>Guess The Word Game</h5>
                 <p class="project-description">
@@ -300,8 +393,30 @@
                   <a
                     href="https://allyson-s-code.github.io/Unplugged-Responsive/"
                     target="_blank"
-                    ><img src="img/unplugged.png" alt="Unplugged Project"
-                  /></a>
+                  >
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="img/unplugged/unplugged-360w.webp 1x"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="img/unplugged/unplugged-720w.webp 2x"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="img/unplugged/unplugged-360w.jpg 1x"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="img/unplugged/unplugged-720w.jpg 2x"
+                      />
+                      <img
+                        src="img/unplugged/unplugged-720w.jpg"
+                        alt="Unplugged Project"
+                      />
+                    </picture>
+                  </a>
                 </figure>
                 <h5>Unplugged</h5>
                 <p class="project-description">
