@@ -142,7 +142,6 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  font-weight: 300;
 }
 
 h3 {
@@ -184,6 +183,7 @@ p {
 .skill {
   font-family: "Roboto Mono", monospace;
   font-size: 0.875rem;
+  font-weight: 400;
 }
 
 .copyright-wrapper p {
@@ -647,6 +647,10 @@ footer .contact-wrapper {
 
 footer h3 {
   font-size: 2rem;
+}
+
+footer p {
+  font-weight: 400;
 }
 
 footer .period {
