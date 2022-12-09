@@ -127,23 +127,31 @@
           <figure class="profile-img-wrapper">
             <picture>
               <source
+                media="(min-width: 769px)"
                 type="image/webp"
-                srcset="img/profile/allyson-profile-275w.webp 1x"
+                srcset="
+                  img/profile/allyson-profile-275w.webp 1x,
+                  img/profile/allyson-profile-600w.webp 2x
+                "
               />
+
+              <source
+                media="(min-width: 769px)"
+                type="image/png"
+                srcset="
+                  img/profile/allyson-profile-275w.png 1x,
+                  img/profile/allyson-profile-600w.png 2x
+                "
+              />
+
               <source
                 type="image/webp"
                 srcset="img/profile/allyson-profile-600w.webp 2x"
               />
-              <source
-                type="image/png"
-                srcset="img/profile/allyson-profile-275w.png 1x"
-              />
-              <source
-                type="image/png"
-                srcset="img/profile/allyson-profile-600w.png 2x"
-              />
+
               <img
                 src="img/profile/allyson-profile-600w.png"
+                srcset="img/profile/allyson-profile-600w.png 2x"
                 alt="Allyson Smith Headshot"
                 class="profile-img"
               />
@@ -488,7 +496,7 @@
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" async></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
