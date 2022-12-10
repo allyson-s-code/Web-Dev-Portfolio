@@ -3,6 +3,7 @@
   font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 100;
+  font-display: swap;
   src: url("fonts/lexend-deca-v17-latin-100.eot"); /* IE9 Compat Modes */
   src: local(""),
     url("fonts/lexend-deca-v17-latin-100.eot?#iefix")
@@ -20,6 +21,7 @@
   font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 200;
+  font-display: swap;
   src: url("fonts/lexend-deca-v17-latin-200.eot"); /* IE9 Compat Modes */
   src: local(""),
     url("fonts/lexend-deca-v17-latin-200.eot?#iefix")
@@ -37,6 +39,7 @@
   font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("fonts/lexend-deca-v17-latin-regular.eot"); /* IE9 Compat Modes */
   src: local(""),
     url("fonts/lexend-deca-v17-latin-regular.eot?#iefix")
@@ -72,6 +75,7 @@
   font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 900;
+  font-display: swap;
   src: url("fonts/lexend-deca-v17-latin-900.eot"); /* IE9 Compat Modes */
   src: local(""),
     url("fonts/lexend-deca-v17-latin-900.eot?#iefix")
@@ -90,6 +94,7 @@
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("fonts/roboto-mono-v22-latin-regular.eot"); /* IE9 Compat Modes */
   src: local(""),
     url("fonts/roboto-mono-v22-latin-regular.eot?#iefix")
