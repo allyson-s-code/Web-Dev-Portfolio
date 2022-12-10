@@ -1,3 +1,9 @@
+/*
+=============== 
+Fonts
+===============
+*/
+
 /* lexend-deca-100 - latin */
 @font-face {
   font-family: "Lexend Deca";
@@ -576,6 +582,7 @@ button {
 
 .profile-img {
   width: 100%;
+  height: auto;
   border-radius: 50%;
   border: 2px solid white;
   z-index: 1;
@@ -702,6 +709,11 @@ button {
   border: 5px solid white;
   border-radius: 5px;
   margin: 20px 0;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
 }
 
 #work h4 {
