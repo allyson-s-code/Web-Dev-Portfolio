@@ -396,7 +396,6 @@ button {
   display: block;
   cursor: pointer;
   justify-self: right;
-  align-self: right;
 }
 
 .overlay {
@@ -647,7 +646,7 @@ button {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-  gap: 25px;
+  gap: 35px;
 }
 
 .portfolio-item-wrapper {
@@ -742,7 +741,7 @@ button {
   border-radius: 30px;
   color: var(--main-text-color);
   text-decoration: none;
-  align-self: left;
+  text-align: left;
   margin: 30px 0 45px 0;
 }
 
@@ -1162,7 +1161,7 @@ footer .social-icons i {
 
   .portfolio-wrapper {
     justify-content: space-between;
-    gap: 20px;
+    gap: 40px 20px;
   }
 
   .portfolio-item-wrapper {
@@ -1269,7 +1268,7 @@ footer .social-icons i {
   /* PORTFOLIO */
   .portfolio-wrapper {
     justify-content: center;
-    gap: 15px;
+    gap: 30px 15px;
   }
 
   .portfolio-item-wrapper {
